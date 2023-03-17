@@ -12,10 +12,10 @@ module Node #(parameter x = 4, parameter J = 1, parameter L = 1, parameter g = 0
     output logic [0:w*x-1] odata,
 
     input logic controllerivalid, 
-    input logic [0:127] controlleridata,
+    input logic [0:w-1] controlleridata,
 
     output logic controllerovalid,
-    output logic [0:127] controllerodata
+    output logic [0:w-1] controllerodata
 );
 
 logic [0:31] operation;
